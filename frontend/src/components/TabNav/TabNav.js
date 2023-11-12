@@ -39,7 +39,7 @@ function a11yProps(index) {
     };
 }
 
-const Nav = (props) => {
+const TabNav = (props) => {
     const [value, setValue] = useState(1);
 
     const handleChange = (event, newValue) => {
@@ -82,4 +82,4 @@ const Nav = (props) => {
     );
 };
 
-export default Nav;
+export default TabNav;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Nav from "../Nav/Nav";
 
 export const HeaderContainer = styled.div`
     display: flex;
@@ -11,7 +10,7 @@ export const HeaderContainer = styled.div`
 const Header = () => {
     return (
         <HeaderContainer>
-            <Nav/>
+            <p>stuff</p>
         </HeaderContainer>
     );
 }
