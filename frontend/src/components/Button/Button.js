@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-    font-size: 1.2rem;
-    width: 9rem;
-    min-width: fit-content;
+    font-size: 1rem;
+    min-width: 3rem;
+    min-height: 2rem;
+    max-width: 5rem;
     font-family: "Roboto Flex", sans-serif;
-    padding: 0.5rem;
+    padding: 0.25rem;
     color: white;
     border: 2px solid #51A3A3;
     border-radius: 20px;
