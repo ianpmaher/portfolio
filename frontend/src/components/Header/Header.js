@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Contact from "../Contact/Contact";
 
 export const HeaderContainer = styled.div`
     display: flex;
@@ -11,6 +12,7 @@ const Header = () => {
     return (
         <HeaderContainer>
             <p>stuff</p>
+            <Contact />
         </HeaderContainer>
     );
 }
