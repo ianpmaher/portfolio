@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Content from '../Content/Content';
-import Sidebar from '../Sidebar/Sidebar';
+import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import Sidebar from '../Sidebar/Sidebar';
 
 const HomePageContainer = styled.div`
     display: flex;
@@ -9,6 +10,7 @@ const HomePageContainer = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    width: 100vw;
 `;
 
 const HolyGrailBody = styled.div`
@@ -16,8 +18,9 @@ const HolyGrailBody = styled.div`
     flex-direction: column;
     flex: 1;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    width: 100vw;
+    margin: 0 auto;
 `;
 
 const HomePage = () => {
@@ -28,6 +31,7 @@ const HomePage = () => {
                 <Content />
                 {/* <Sidebar /> */}
             </HolyGrailBody>
+            <Footer />
         </HomePageContainer>
     );
 }

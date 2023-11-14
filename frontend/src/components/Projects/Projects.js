@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import projectsList from "./projectsList";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
 
 const FlexContainer = styled.div`
     display: flex;
@@ -25,11 +29,20 @@ const ProjectsContainer = styled.ul`
 const Projects = (props) => {
     const listItems = projectsList.map((project) => 
         <li key={project.id}>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <a href={project.github}>GitHub</a>
-            <a href={project.live}>Live Site</a>
-            {project.name}
+            <Card sx={{ maxWidth: 600}}>
+                <CardMedia
+                    component="img"
+                    height="300"
+                    image={project.image}
+                    alt={project.title}
+                />
+                <CardContent>
+                    <h2>{project.title}</h2>
+                    <p>{project.description}</p>
+                    <a href={project.github}>GitHub</a>
+                    <a href={project.live}>Live Site</a>
+                </CardContent>
+            </Card>
         </li>
     );
 

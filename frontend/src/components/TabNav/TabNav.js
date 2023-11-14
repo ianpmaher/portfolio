@@ -4,7 +4,7 @@ import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import HomePage from "../../pages/HomePage/HomePage";
+import Projects from "../Projects/Projects";
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -13,7 +13,7 @@ function TabPanel(props) {
         <div
             role="tabpanel"
             hidden={value !== index}
-            id={`full-width-tabpanel-${index}`}
+            id={`tabpanel-${index}`}
             aria-labelledby={`full-width-tab-${index}`}
             {...other}
         >
@@ -40,7 +40,7 @@ function a11yProps(index) {
 }
 
 const TabNav = (props) => {
-    const [value, setValue] = useState(1);
+    const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -49,13 +49,14 @@ const TabNav = (props) => {
     return (
         <div>
             <Box sx={{ bgcolor: "background.paper" }}>
-                <AppBar position="static">
+                <AppBar position="static" >
                     <Tabs
                         value={value}
                         onChange={handleChange}
                         indicatorColor="secondary"
                         textColor="inherit"
                         aria-label="tabs"
+                        centered
                         sx={{ padding: "0 1rem" }}
                     >
                         <Tab label="Home" {...a11yProps(0)} />
@@ -65,7 +66,7 @@ const TabNav = (props) => {
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0} >
-                    <HomePage />
+                    <Projects />
                 </TabPanel>
                 <TabPanel value={value} index={1} >
                     <p>cool</p>
