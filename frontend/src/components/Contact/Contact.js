@@ -11,6 +11,7 @@ const ContactContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 0 auto;
 `;
 
 const ContactUl = styled.ul`
@@ -22,6 +23,7 @@ const ContactUl = styled.ul`
     align-items: center;
     gap: 1rem;
     padding: 0;
+    margin: 0;
 `;
 
 const Contact = () => {

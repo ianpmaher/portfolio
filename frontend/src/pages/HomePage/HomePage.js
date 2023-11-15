@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Content from '../Content/Content';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
-import Sidebar from '../Sidebar/Sidebar';
+// import Sidebar from '../Sidebar/Sidebar';
 
 const HomePageContainer = styled.div`
     display: flex;

@@ -4,6 +4,8 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 
 const FlexContainer = styled.div`
     display: flex;
@@ -26,21 +28,35 @@ const ProjectsContainer = styled.ul`
     }
 `;
 
+const CardStyle = {
+    transition: "0.8s all ease-in-out",
+    "&:hover": {
+        transform: "scale(1.1)",
+        boxShadow: 10,
+    },
+}
+
+const SpaceSpan = styled.span`
+    margin: 0 0.25rem;
+`;
+
 const Projects = (props) => {
     const listItems = projectsList.map((project) => 
         <li key={project.id}>
-            <Card sx={{ maxWidth: 600}}>
+            <Card sx={{ maxWidth: 600, bgcolor: '', boxShadow: 10 }}>
                 <CardMedia
                     component="img"
                     height="300"
                     image={project.image}
                     alt={project.title}
+                    sx={CardStyle}
                 />
                 <CardContent>
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
-                    <a href={project.github}>GitHub</a>
-                    <a href={project.live}>Live Site</a>
+                    <a href={project.github} title={project.title} target="__blank" rel="noreferrer noopener">GitHub<GitHubIcon/></a>
+                    <SpaceSpan/>
+                    <a href={project.live} title={project.title} target="__blank" rel="noreferrer noopener">Live Site<OpenInNewRoundedIcon/></a>
                 </CardContent>
             </Card>
         </li>

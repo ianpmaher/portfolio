@@ -14,7 +14,7 @@ function TabPanel(props) {
             role="tabpanel"
             hidden={value !== index}
             id={`tabpanel-${index}`}
-            aria-labelledby={`full-width-tab-${index}`}
+            aria-labelledby={`tab-${index}`}
             {...other}
         >
             {value === index && (
@@ -34,8 +34,8 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
     return {
-        id: `full-width-tab-${index}`,
-        "aria-controls": `full-width-tabpanel-${index}`,
+        id: `tab-${index}`,
+        "aria-controls": `tabpanel-${index}`,
     };
 }
 
@@ -49,20 +49,23 @@ const TabNav = (props) => {
     return (
         <div>
             <Box sx={{ bgcolor: "background.paper" }}>
-                <AppBar position="static" >
+                <AppBar position="sticky" sx={{width: "50rem", m: "0 auto", borderRadius: "20px", bgcolor: 'secondary.main'}} > 
                     <Tabs
                         value={value}
                         onChange={handleChange}
                         indicatorColor="secondary"
                         textColor="inherit"
                         aria-label="tabs"
+                        // variant="fullWidth"                        
                         centered
                         sx={{ padding: "0 1rem" }}
+                        // selectionFollowsFocus
+                        
                     >
                         <Tab label="Home" {...a11yProps(0)} />
                         <Tab label="cool" {...a11yProps(1)} />
-                        <Tab label="contact" {...a11yProps(2)} />
-                        <Tab label="projects" {...a11yProps(3)} />
+                        <Tab label="Contact Long" {...a11yProps(2)} />
+                        <Tab label="RESUME" {...a11yProps(3)} />
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0} >
@@ -73,10 +76,10 @@ const TabNav = (props) => {
 
                 </TabPanel>
                 <TabPanel value={value} index={2} >
-                    <p>contact</p>
+                    <p>Contact Long Form</p>
                 </TabPanel>
                 <TabPanel value={value} index={3} >
-                    <p>projects</p>
+                    <p>RESUME</p>
                 </TabPanel>
             </Box>
         </div>
