@@ -30,7 +30,7 @@ const ProjectsContainer = styled.ul`
 `;
 
 const CardStyle = {
-    transition: "0.8s all ease-in-out",
+    transition: "1.5s all ease-out",
     "&:hover": {
         transform: "scale(1.1)",
         boxShadow: 10,
@@ -47,13 +47,14 @@ const Projects = (props) => {
             <Card sx={{ maxWidth: 500, bgcolor: '', boxShadow: 10 }}>
                 <CardMedia
                     component="img"
-                    height="300"
+                    height="350"
                     image={project.image}
                     alt={project.title}
                     sx={CardStyle}
                 />
                 <CardContent>
                     <h2>{project.title}</h2>
+                    {/* project tags somehow */}
                     <p>{project.description}</p>
                     <a href={project.github} title={project.title} target="__blank" rel="noreferrer noopener">GitHub<GitHubIcon/></a>
                     <SpaceSpan/>

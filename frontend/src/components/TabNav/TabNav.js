@@ -53,17 +53,16 @@ const TabNav = (props) => {
                     <Tabs
                         value={value}
                         onChange={handleChange}
-                        indicatorColor="secondary"
+                        indicatorColor="primary"
                         textColor="inherit"
                         aria-label="tabs"
                         variant="fullWidth"
                         centered
                         sx={{ padding: "0 0.5rem" }}
                         // selectionFollowsFocus
-                        
                     >
                         <Tab label="Home" {...a11yProps(0)} />
-                        <Tab label="cool" {...a11yProps(1)} />
+                        <Tab label="Projects" {...a11yProps(1)} />
                         <Tab label="Contact Long" {...a11yProps(2)} />
                         <Tab label="RESUME" {...a11yProps(3)} />
                     </Tabs>
@@ -72,8 +71,7 @@ const TabNav = (props) => {
                     <Projects />
                 </TabPanel>
                 <TabPanel value={value} index={1} >
-                    <p>cool</p>
-
+                    <Projects/>
                 </TabPanel>
                 <TabPanel value={value} index={2} >
                     <p>Contact Long Form</p>

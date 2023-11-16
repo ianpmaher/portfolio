@@ -6,7 +6,8 @@ const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 90vw;
+    margin: 0 auto 1rem auto;
 `;
 
 const Footer = () => {
