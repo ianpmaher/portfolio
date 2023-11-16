@@ -49,16 +49,16 @@ const TabNav = (props) => {
     return (
         <div>
             <Box sx={{ bgcolor: "background.paper" }}>
-                <AppBar position="sticky" sx={{width: "50rem", m: "0 auto", borderRadius: "20px", bgcolor: 'secondary.main'}} > 
+                <AppBar position="sticky" sx={{width: "50vw", m: "0 auto", borderRadius: "20px", bgcolor: 'secondary.main'}} > 
                     <Tabs
                         value={value}
                         onChange={handleChange}
                         indicatorColor="secondary"
                         textColor="inherit"
                         aria-label="tabs"
-                        // variant="fullWidth"                        
+                        variant="fullWidth"
                         centered
-                        sx={{ padding: "0 1rem" }}
+                        sx={{ padding: "0 0.5rem" }}
                         // selectionFollowsFocus
                         
                     >

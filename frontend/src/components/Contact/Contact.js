@@ -10,8 +10,6 @@ const ContactContainer = styled.div`
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin: 0 auto;
 `;
 
 const ContactUl = styled.ul`
@@ -21,7 +19,7 @@ const ContactUl = styled.ul`
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 0;
     margin: 0;
 `;

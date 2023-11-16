@@ -5,7 +5,7 @@ const IconCard = styled.div`
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    max-width: 5rem;
+    max-width: 3rem;
     @media (max-width: 768px) {
         width: 100%;
     }

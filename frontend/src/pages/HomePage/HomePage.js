@@ -10,7 +10,8 @@ const HomePageContainer = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    width: 100vw;
+    max-width: 90vw;
+    margin: 0 auto;
 `;
 
 const HolyGrailBody = styled.div`
@@ -19,7 +20,6 @@ const HolyGrailBody = styled.div`
     flex: 1;
     align-items: center;
     justify-content: flex-start;
-    width: 100vw;
     margin: 0 auto;
 `;
 

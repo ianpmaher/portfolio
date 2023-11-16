@@ -23,6 +23,7 @@ const ProjectsContainer = styled.ul`
     place-items: center;
     place-content: center;
     list-style-type: none;
+    margin: 0 auto;
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
     }
@@ -43,7 +44,7 @@ const SpaceSpan = styled.span`
 const Projects = (props) => {
     const listItems = projectsList.map((project) => 
         <li key={project.id}>
-            <Card sx={{ maxWidth: 600, bgcolor: '', boxShadow: 10 }}>
+            <Card sx={{ maxWidth: 500, bgcolor: '', boxShadow: 10 }}>
                 <CardMedia
                     component="img"
                     height="300"

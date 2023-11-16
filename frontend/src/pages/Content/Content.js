@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Projects from "../../components/Projects/Projects";
 import TabNav from "../../components/TabNav/TabNav";
 
 const ContentContainer = styled.main`
@@ -7,7 +6,8 @@ const ContentContainer = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
+
 `;
 
 const Content = () => {
