@@ -10,8 +10,9 @@ const HomePageContainer = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    max-width: 90vw;
+    width: 100%;
     margin: 0 auto;
+    background: radial-gradient(circle at 100%, rgba(255, 208, 168, 1) 0%, rgba(82,84,164,1) 33%, rgba(247,160,130,1) 66%, rgba(178,166,215,1) 100%);
 `;
 
 const HolyGrailBody = styled.div`

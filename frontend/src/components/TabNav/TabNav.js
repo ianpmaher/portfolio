@@ -39,6 +39,13 @@ function a11yProps(index) {
     };
 }
 
+const TabLabelStyle = {
+    textTransform: "capitalize",
+    fontWeight: "bold",
+    fontSize: "1.25rem",
+    fontFamily: "'Roboto Serif', serif",
+}
+
 const TabNav = (props) => {
     const [value, setValue] = useState(0);
 
@@ -47,9 +54,9 @@ const TabNav = (props) => {
     };
 
     return (
-        <div>
-            <Box sx={{ bgcolor: "background.paper" }}>
-                <AppBar position="sticky" sx={{width: "50vw", m: "0 auto", borderRadius: "20px", bgcolor: 'secondary.main'}} > 
+        <>
+            <Box sx={{ bgcolor: "background.paper.p", boxShadow: "19", borderRadius: "20px" }}>
+                <AppBar position="sticky" sx={{width: "50vw", m: "0 auto", borderRadius: "20px", bgcolor: 'secondary.main', boxShadow: "5"}} > 
                     <Tabs
                         value={value}
                         onChange={handleChange}
@@ -61,10 +68,10 @@ const TabNav = (props) => {
                         sx={{ padding: "0 0.5rem" }}
                         // selectionFollowsFocus
                     >
-                        <Tab label="Home" {...a11yProps(0)} />
-                        <Tab label="Projects" {...a11yProps(1)} />
-                        <Tab label="Contact Long" {...a11yProps(2)} />
-                        <Tab label="RESUME" {...a11yProps(3)} />
+                        <Tab label="Home" {...a11yProps(0)} style={TabLabelStyle}/>
+                        <Tab label="Projects" {...a11yProps(1)} style={TabLabelStyle} />
+                        <Tab label="Contact" {...a11yProps(2)} style={TabLabelStyle} />
+                        <Tab label="Resume" {...a11yProps(3)} style={TabLabelStyle}/>
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0} >
@@ -80,7 +87,7 @@ const TabNav = (props) => {
                     <p>RESUME</p>
                 </TabPanel>
             </Box>
-        </div>
+        </>
     );
 };
 
