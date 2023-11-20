@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 const HeaderContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 1rem;
     align-items: center;
     position: sticky;
@@ -14,7 +14,7 @@ const HeaderContainer = styled.div`
 `;
 
 const HeaderText = styled.h1`
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #000;
     margin: 0.2rem 0;
     padding: 0.2rem;

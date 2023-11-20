@@ -5,6 +5,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Projects from "../Projects/Projects";
+import ResumePage from "../../pages/ResumePage/ResumePage";
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -87,7 +88,7 @@ const TabNav = (props) => {
                     <p>Contact Long Form</p>
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                    <p>RESUME</p>
+                    <ResumePage/>
                 </TabPanel>
             </Box>
         </>
