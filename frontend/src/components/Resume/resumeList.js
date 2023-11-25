@@ -12,6 +12,8 @@ const resumeList = {
             "Python",
             "Django",
             "Embedded JavaScript",
+            "PostgreSQL",
+            "HTML",
         ],
     Education: {
         "General Assembly": {

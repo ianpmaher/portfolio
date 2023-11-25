@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import GridIcons from "../../components/GridIcons/GridIcons";
 
 const AboutPageContainer = styled.div`
     display: flex;
@@ -30,6 +31,7 @@ const AboutPage = (props) => {
             <AboutPageText>
                 Hi! I'm a full stack web developer with a background in education and a passion for learning. I'm a graduate of General Assembly's Software Engineering Immersive Bootcamp. I'm a team player with a passion for learning and a drive to succeed.
             </AboutPageText>
+            <GridIcons />
         </AboutPageContainer>
     );
 }
