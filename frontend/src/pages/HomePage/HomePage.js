@@ -12,7 +12,7 @@ const HomePageContainer = styled.div`
     min-height: 100vh;
     width: 100%;
     margin: 0 auto;
-    background: radial-gradient(circle at 100%, rgba(255, 208, 168, 1) 0%, rgba(82,84,164,1) 33%, rgba(247,160,130,1) 66%, rgba(178,166,215,1) 100%);
+    background: radial-gradient(circle at 100%, rgba(82,84,164,1) 10%, rgba(247,160,130,1) 40%, rgba(178,166,215,1) 55%);
 `;
 
 // TODO: if this is background of HolyGrailBody, then the background of whole thing could be BLACK

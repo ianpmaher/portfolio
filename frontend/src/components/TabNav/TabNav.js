@@ -6,6 +6,7 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Projects from "../Projects/Projects";
 import ResumePage from "../../pages/ResumePage/ResumePage";
+import AboutPage from "../../pages/AboutPage/AboutPage";
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -79,7 +80,7 @@ const TabNav = (props) => {
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0}>
-                    <Projects />
+                    <AboutPage />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     <Projects />

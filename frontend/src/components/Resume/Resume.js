@@ -21,12 +21,6 @@ const ResumeHeader = styled.h4`
     font-family: "Roboto Serif", serif;
 `;
 
-const ResumeList = styled.ul`
-    list-style: none;
-    padding: 0;
-    margin: 0;
-`;
-
 const ResumeListItem = styled.li`
     list-style: none;
     font-size: 1rem;
@@ -61,7 +55,7 @@ const Resume = () => {
                 {resumeList["Technical Skills"].map((skill) => (
                     <Card
                         key={skill}
-                        sx={{ p: 1, boxShadow: 10, borderRadius: "20px" }}
+                        sx={{ p: 1, boxShadow: 10, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.8)", fontFamily: "JetBrains Mono, monospace", ":hover": { fontSize: "1.2rem", backgroundColor: "black", color: "white" }, transition: "all 0.2s ease-in-out" }}
                     >
                         {skill}
                     </Card>

@@ -19,7 +19,7 @@ const HeaderText = styled.h1`
     margin: 0.2rem 0;
     padding: 0.2rem;
     letter-spacing: 0.1rem;
-    font-family: 'Roboto Serif', serif;
+    font-family: 'Merriweather', serif;
     `;
 //font-family: 'Crimson Text', serif;
 
