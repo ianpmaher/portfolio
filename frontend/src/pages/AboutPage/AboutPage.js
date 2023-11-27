@@ -12,16 +12,16 @@ const AboutPageContainer = styled.div`
 `;
 const AboutPageHeader = styled.h1`
     font-size: 2rem;
-    color: #000;
+    color: #fff;
     margin: 0 auto;
     letter-spacing: 0.1rem;
 `;
 
 const AboutPageText = styled.p`
     font-size: 1rem;
-    color: #000;
     margin: 0 auto;
     padding: 0rem auto;
+    color: #000;
 `;
 
 const AboutPage = (props) => {

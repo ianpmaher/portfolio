@@ -13,6 +13,7 @@ const FlexContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    width: 80vw;
 `;
 
 const ProjectsContainer = styled.ul`

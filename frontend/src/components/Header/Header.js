@@ -15,18 +15,17 @@ const HeaderContainer = styled.div`
 
 const HeaderText = styled.h1`
     font-size: 2.5rem;
-    color: #000;
+    color: #fff;
     margin: 0.2rem 0;
-    padding: 0.2rem;
     letter-spacing: 0.1rem;
     font-family: 'Merriweather', serif;
-    `;
+`;
 //font-family: 'Crimson Text', serif;
 
 const Header = () => {
     return (
         <HeaderContainer>
-            <Box sx={{boxShadow: "19", borderRadius: "20px", bgcolor: "rgba(255,255,255,0.3)"}}>
+            <Box sx={{boxShadow: "19", p: "0 1rem", borderRadius: "20px", bgcolor: "#a4f"}}>
                 <HeaderText>Ian Maher</HeaderText>
             </Box>
             <Contact />

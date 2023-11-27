@@ -19,17 +19,19 @@ import expressIcon from "../../assets/express.svg";
 
 const GridContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     width: 100%;
-    grid-gap: 1rem;
-    padding: 1rem;
+    grid-gap: 5rem;
+    padding: 10rem;
     place-items: center;
     place-content: center;
     list-style-type: none;
     margin: 0 auto;
     object-fit: cover;
     @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
+        grid-gap: 0.5rem;
     }
 `;
 
@@ -40,14 +42,20 @@ const GridIcons = (props) => {
 
     return (
         <GridContainer>
-            <Card>
+            { cardImages.map((cardImages) => (
+            <Card
+                key={cardImages}
+                sx={{ p: {xs: 0.5, md: 2}, boxShadow: 5, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.7)", ":hover": { boxShadow: 20}, transition: "all 0.2s ease-in-out" }}
+            >
                 <CardMedia
                     component="img"
-                    height="100"
-                    image={cardImages}
+                    // height= "100"
+                    src={cardImages}
                     alt={cardImages}
+                    sx={{ objectFit: "contain", height: { xs: "60px", md: "80px" }, width: { xs: "80px", md: "100px"}}}
                 />
             </Card>
+            ))}
         </GridContainer>
     );
 }
