@@ -6,6 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
+import ProjectTags from "../ProjectTags/ProjectTags";
 
 const FlexContainer = styled.div`
     display: flex;
@@ -60,6 +61,7 @@ const Projects = (props) => {
                     <a href={project.github} title={project.title} target="__blank" rel="noreferrer noopener">GitHub<GitHubIcon/></a>
                     <SpaceSpan/>
                     <a href={project.live} title={project.title} target="__blank" rel="noreferrer noopener">Live Site<OpenInNewRoundedIcon/></a>
+                    <ProjectTags tags={project.tags} />
                 </CardContent>
             </Card>
         </li>

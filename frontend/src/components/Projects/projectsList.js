@@ -10,7 +10,7 @@ const projectsList =
         "github2": "https://github.com/ianpmaher/pawsOnLifeBackEnd",
         "live": "https://pawson.life/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Zazu_the_dog_on_Lion%27s_Head_mountain_24.jpg/1280px-Zazu_the_dog_on_Lion%27s_Head_mountain_24.jpg", // Discott, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
-        "screenshot": "https://user-images.githubusercontent.com/120536234/282807646-28fd01fc-7a91-420c-8b23-1c3466654ecd.png"
+        "screenshot": "https://user-images.githubusercontent.com/120536234/282807646-28fd01fc-7a91-420c-8b23-1c3466654ecd.png",
     },
     {
         "id": 2,
