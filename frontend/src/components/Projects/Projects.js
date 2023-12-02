@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import projectsList from "./projectsList";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
+// import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -26,8 +26,14 @@ const ProjectsContainer = styled.ul`
     place-content: center;
     list-style-type: none;
     margin: 0 auto;
-    @media (max-width: 768px) {
+    @media (max-width: 760px) {
         grid-template-columns: 1fr;
+        padding: 0.1rem;
+        grid-gap: 0.1rem;
+    }
+    @media (max-width: 900px) {
+        padding: 0.1rem;
+        grid-gap: 0.5rem;
     }
 `;
 
@@ -56,12 +62,12 @@ const Projects = (props) => {
                 />
                 <CardContent>
                     <h2>{project.title}</h2>
-                    {/* project tags somehow */}
                     <p>{project.description}</p>
+                    <ProjectTags tags={project.tags} />
+                    <br/>
                     <a href={project.github} title={project.title} target="__blank" rel="noreferrer noopener">GitHub<GitHubIcon/></a>
                     <SpaceSpan/>
                     <a href={project.live} title={project.title} target="__blank" rel="noreferrer noopener">Live Site<OpenInNewRoundedIcon/></a>
-                    <ProjectTags tags={project.tags} />
                 </CardContent>
             </Card>
         </li>
